@@ -69,8 +69,8 @@ const  { ind } = require(`./help`)
 lang = ind 
 
 //times
-const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')
-const salam = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
+const time = moment(Date.now()).tz('Asia/Kualalumpur').locale('id').format('HH:mm:ss z')
+const salam = moment(Date.now()).tz('Asia/Kualalumpur').locale('id').format('a')
 
 
 module.exports = Leon = async (Leon, mek) => {
@@ -346,7 +346,7 @@ module.exports = Leon = async (Leon, mek) => {
 			if (tebakgambar.hasOwnProperty(sender.split('@')[0]) && !isCmd) {
                 jawaban = tebakgambar[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    sendButMessage(from, "Selamat 😘 Jawaban kamu benar!", `• ${ownername}`, [{"buttonId": `.tebakgambar`,"buttonText": {"displayText": "Tebak Gambar"},"type": "RESPONSE"}], {quoted : mek})
+                    sendButMessage(from, "Selamat � Jawaban kamu benar!", `• ${ownername}`, [{"buttonId": `.tebakgambar`,"buttonText": {"displayText": "Tebak Gambar"},"type": "RESPONSE"}], {quoted : mek})
                     delete tebakgambar[sender.split('@')[0]]
                     fs.writeFileSync("./database/game/tebakgambar.json", JSON.stringify(tebakgambar))
                 } else {
@@ -375,7 +375,7 @@ module.exports = Leon = async (Leon, mek) => {
 		if (!mek.key.fromMe && global.self === true) return
 //colong aja bang, ingat jgn asal colong ntr sc lu error
 switch (command) {
-case 'menu': case 'help': case 'Leon':
+case 'menu': case 'help': case 'aiman':
 if (!isLeon) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 				sendButLocation(from, lang.menu(prefix, salam, pushname), '© ' + ownername, thumbnail, [{buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},{buttonId: '.infobot', buttonText:{displayText: 'Infobot'}, type: 1}], {quoted: mek})
 				break
@@ -398,7 +398,7 @@ case 'owner':{
 					"displayName": `${ini_list.length} kontak`,
 					"contacts": ini_list 
 					}, 'contactsArrayMessage', { quoted: mek })
-					Leon.sendMessage(from, `Ini Owner Leon Suzuki Yak, Jangan Ganggu :V`, text, {quoted: hehe})
+					Leon.sendMessage(from, `Ini Owner :V`, text, {quoted: hehe})
 				}
 			break
 case 'sticker':case 'stiker':case 'stickergif':case 'stikergif':case 'sgif':case 's':
