@@ -381,7 +381,7 @@ if (!isLeon) return sendButMessage(from, lang.noregis(pushname), `Klik Button Un
 				break
 case 'infobot':
 if (!isLeon) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
-			reply('Sedang update bot Leon Suzuki..')
+			reply('Sedang update bot ')
 break
 case 'owner':{
 	if (!isLeon) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
