@@ -7,12 +7,12 @@ global.anticall = false
 global.anti_delete = false
 
 // setting
-global.ownername ="Lion Suzune"
-global.ownernumber = "62887433094409"
-global.botname = "Leon Suzuki botz"
+global.ownername ="Aiman"
+global.ownernumber = "60102810046"
+global.botname = "rikka botz"
 global.thumbnail = fs.readFileSync("./settings/Leon.jpg") //sesuaikan dengan nama foto
 global.background = "https://telegra.ph/file/d4c05638fa7886a1d8060.jpg"
-global.lolkey = 'e966d3aac613b61dabd35cc6' //register lolhuman.xyz klo mau apikey
+global.lolkey = '4ef1b11287339c1b10699ece' //register lolhuman.xyz klo mau apikey
 global.zenzkey = '8423e19c13' //register zenzapi.xyz klo mau apikey
 global.limit = {
 		free:20,
